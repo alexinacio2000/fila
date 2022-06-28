@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args) {
+		System.out.println("Existe uma fila com 7 pessoas, você sorteia quem será o próximo a entrar");
+		System.out.println("João tem o número 1,Maria 2, Carlos 3, Pedro 4, Julia 5, Paulo 6 e Fernando 7");
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		String dia;
+		switch (x) {
+		case 1:
+			dia = "João";
+			break;
+		case 2:
+			dia = "Maria";
+			break;
+		case 3:
+			dia = "Carlos";
+			break;
+		case 4:
+			dia = "Pedro";
+			break;
+		case 5:
+			dia = "Julia";
+			break;
+		case 6:
+			dia = "Paulo";
+			break;
+		case 7:
+			dia = "Fernando";
+			break;
+		default:
+			dia = "valor invalido";
+			break;
+		}
+		System.out.println("Dia da semana: " + dia);
+		sc.close();
+	}
+}
